@@ -1,0 +1,137 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 0.5rem var(--color-primary);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Path: Markdown Previewer/markdown-previewer/src/components/Card/card.module.css */
+.card:hover {
+    box-shadow: 0 0 0.5rem var(--color-secondary);
+}
+
+/* Path: Markdown Previewer/markdown-previewer/src/components/Card/card.module.css */
+
+/* Path: Markdown Previewer/markdown-previewer/src/components/Card/card.module.css */
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cardHeader h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+.cardHeader button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.cardHeader button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.cardPill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cardBody textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    resize: none;
+    outline: none;
+}
+
+.cardBody textarea:focus {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.cardBody textarea::placeholder {
+    color: var(--color-primary);
+}
+
+.cardBody textarea:focus::placeholder {
+    color: var(--color-secondary);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 70%;
+    }
+
+    .cardImg {
+        max-width: 90%;
+        height: 2em;
+    }
+
+    .cardHeader h3 {
+        font-size: 2rem;
+    }
+
+    .cardBody textarea {
+        font-size: 1.5rem;
+    }
+
+    .cardBody textarea::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .cardBody textarea:focus::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .cardBody {
+        height: 70%;
+
+    }
+
+    .cardPill {
+        padding: 0.5rem 1rem;
+    }
+
+    .cardHeader button {
+        padding: 0.5rem 1rem;
+    }
+}
